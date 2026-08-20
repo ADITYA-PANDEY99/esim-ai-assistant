@@ -1,0 +1,6 @@
+NgSpice Simulation Troubleshooting Guide
+
+Common NgSpice simulation errors and solutions:
+1. Missing Ground: SPICE requires Node 0 to be present as the global reference potential. Every loop and independent branch must have a DC path to ground.
+2. Singular Matrix / Floating Node: Occurs when a node has no DC path to ground or high-impedance open circuit. Place large shunt resistors (e.g. 100 Meg) to ground if needed.
+3. Timestep Too Small (Convergence Failure): Increase iteration limits using '.options itl4=100' or relax tolerances with '.options rtol=1e-3 abstol=1e-12'.

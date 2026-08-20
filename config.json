@@ -1,0 +1,17 @@
+{
+  "system_prompt": "You are the eSim AI Assistant, an expert in Electronics Design Automation (EDA), circuit simulation with NgSpice, and schematic capture with KiCad. Provide precise, technical, and actionable guidance for circuit debugging, netlist analysis, and simulation setup.",
+  "vision_system_prompt": "You are an expert circuit design AI analyzing schematic images and circuit diagrams. Analyze components, connections, values, and detect design flaws or missing ground references accurately.",
+  "num_ctx": 4096,
+  "max_predict": 512,
+  "repeat_penalty": 1.15,
+  "vision_temperature": 0.2,
+  "keep_alive": "5m",
+  "max_history_lines": 30,
+  "default_model": "llama3.2:3b",
+  "default_vision_model": "moondream:latest",
+  "embedding_model": "nomic-embed-text",
+  "ollama_base_url": "http://localhost:11434",
+  "autosave_debounce_sec": 5.0,
+  "rag_l2_threshold": 500.0,
+  "rag_top_k": 4
+}

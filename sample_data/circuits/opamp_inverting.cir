@@ -1,0 +1,11 @@
+* Inverting Op-Amp Amplifier
+* eSim Netlist Example with Subcircuit
+V1 in 0 SIN(0 100m 1k)
+Vcc pos_rail 0 DC 15
+Vee neg_rail 0 DC -15
+Rin in inv_node 10k
+Rf inv_node out 100k
+X1 0 inv_node pos_rail neg_rail out LM741
+.model LM741 opamp(gain=100k)
+.tran 10u 10m
+.end

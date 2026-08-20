@@ -1,0 +1,9 @@
+eSim Overview and Architecture
+
+eSim is an open-source EDA tool developed by the FOSSEE team at IIT Bombay for circuit design, simulation, and PCB layout. It integrates KiCad for schematic capture and PCB editing, NgSpice for SPICE circuit simulation, and GHDL for digital VHDL simulation.
+
+Key Capabilities of eSim:
+1. Schematic Creation: Uses KiCad Eeschema to design analog, digital, and mixed-signal circuits.
+2. SPICE Model Association: Allows associating external .lib and .sub models with components.
+3. Subcircuit Builder: Converts custom multi-component circuits into reusable single-block subcircuits.
+4. Model Creation: Allows parameterized transistor and diode model definitions.
